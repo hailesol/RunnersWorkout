@@ -4,7 +4,7 @@
     "description": "A random workout generator for runners!",
     "start_url": "index.html",
     "display": "standalone",
-    "background_color": "black",
+    "background_color": "#121212",
     "theme_color": "#4CAF50",
     "icons": [
       {
