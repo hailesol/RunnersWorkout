@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Workout</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="logo-container">
+      <img src="logo.png" alt="Running App Logo">
+    </div>    
+    <h1>Custom Workout Generator</h1>
+    <p>Enter your available time and intensity level to get a tailored workout!</p>
+    <div class="form-container">
+      <label for="timeSelect">Time Available:</label>
+      <select id="timeSelect">
+        <option value="up to 30">Up to 30 mins</option>
+        <option value="30-40">30-40 mins</option>
+        <option value="40-50">40-50 mins</option>
+        <option value="50-60">50-60 mins</option>
+        <option value="60+">1 hour +</option>
+      </select>
+    
+      <label for="intensitySelect">Intensity Level:</label>
+      <select id="intensitySelect">
+        <option value="easy">Easy</option>
+        <option value="moderate">Moderate</option>
+        <option value="hard">Hard</option>
+      </select>
+    
+      <button id="generateWorkoutBtn">Generate Workout</button>
+    </div>
+    <div id="workoutDisplay" class="workout-display">
+      <p>Your custom workout will appear here!</p>
+    </div>
+<div class="buttons">
+    <button id="backBtn">Go Back</button>
+  </div>
+  </div>
+  <script src="custom-script.js"></script>
+</body>
+</html>
+

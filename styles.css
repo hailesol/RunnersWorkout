@@ -1,0 +1,260 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #E0E0E0; /* Light text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 15px;
+    border: 1.5px solid white;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  } 
+  h1 {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    color: #E0E0E0; /* Light gray color for the title */
+  }
+  
+  p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    color: #B0B0B0; /* Slightly muted text color */
+  }
+  
+  /* Buttons */
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  button {
+    background-color: #6200EE; /* Modern purple color */
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: #3700B3; /* Darker purple for hover */
+  }
+  
+  button:active {
+    background-color: #03DAC6; /* Soft teal on active click */
+    transform: scale(0.98); /* Slightly shrink the button when clicked */
+  }
+  
+  /* Button Color Overrides */
+  #easyRunBtn {
+    background-color: slategrey; /* Teal for easy runs */
+  }
+  
+  #easyRunBtn:hover {
+    background-color: darkslategray; /* Darker teal for hover */
+    cursor: pointer;
+  }
+  
+  #intervalBtn {
+    background-color: slategrey; /* Light purple for intervals */
+  }
+  
+  #intervalBtn:hover {
+    background-color: darkslategray; /* Darker purple for hover */
+    cursor: pointer;
+  }
+  
+  #longRunBtn {
+    background-color: slategrey; /* Teal for long runs */
+  }
+  
+  #longRunBtn:hover {
+    background-color: darkslategray; /* Darker teal for hover */
+    cursor: pointer;
+  }
+  
+  /* Displaying the workout */
+  .workout-display {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #1E1E1E; /* Darker background for workout display */
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .workout-display:hover {
+    transform: translateY(-5px); /* Slight floating effect */
+  }
+  
+  .workout-display h3 {
+    font-size: 1rem;
+    color: #E0E0E0; /* Light gray color for headings */
+    margin-bottom: 10px;
+  }
+  
+  .workout-display p {
+    font-size: 1.2rem;
+    color: #B0B0B0;
+    margin-bottom: 8px;
+  }
+  
+  .workout-display strong {
+    font-weight: bold;
+    color: green; /* Highlight with green */
+  }
+  
+  /* Mobile Styles */
+  @media screen and (max-width: 600px) {
+    body {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    button {
+      font-size: 1rem;
+    }
+  
+    .workout-display p {
+      font-size: 1rem;
+    }
+  }
+  /* General Styles for the "Give Me Anything" button */
+.give-anything-btn {
+    background-color: #6200EE; /* Modern purple color */
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+  }
+  
+  .give-anything-btn:hover {
+    background-color: #3700B3; /* Darker purple for hover */
+  }
+  
+  .give-anything-btn:active {
+    background-color: #03DAC6; /* Soft teal on active click */
+    transform: scale(0.98); /* Slightly shrink the button when clicked */
+  }
+  /* Add styles for the separator */
+.separator {
+    width: 100px; /* You can adjust the width */
+    height: 4px; /* The thickness of the rectangle */
+    background-color: gray; /* Color of the separator */
+    border-radius: 50px; /* Curved ends */
+    margin: 20px auto; /* Centering the separator */
+  }
+  #backBtn {
+    margin-top: 15px;
+    background-color: #555;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#backBtn:hover {
+    background-color: #333;
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.logo-container img {
+  width: 100px; /* Adjust as needed */
+  height: auto;
+}
+/* Form Styling */
+.form-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.form-container label {
+  display: block;
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.form-container input,
+.form-container select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-container input:focus,
+.form-container select:focus {
+  border-color: white;
+  outline: none;
+}
+
+.form-container button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 100%;
+}
+
+.form-container button:hover {
+  background-color: #0056b3;
+}
+
+.form-container button:active {
+  transform: scale(0.98);
+}
+

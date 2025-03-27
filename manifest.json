@@ -1,0 +1,17 @@
+{
+    "name": "Give Me A Workout",
+    "short_name": "Workout App",
+    "description": "A random workout generator for runners!",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#f5f5f5",
+    "theme_color": "#4CAF50",
+    "icons": [
+      {
+        "src": "icon.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ]
+  }
+  
