@@ -747,7 +747,7 @@ const easyWorkouts = [
     displayWorkout(longRunWorkouts);
   });
   // Function to randomly select a workout
-function getRandomWorkout() {
+function getAnyWorkout() {
     const allWorkouts = [...easyWorkouts, ...intervalWorkouts, ...longRunWorkouts];
     const randomIndex = Math.floor(Math.random() * allWorkouts.length);
     return allWorkouts[randomIndex];
@@ -755,7 +755,7 @@ function getRandomWorkout() {
   
   // Event listener for the "Give Me Anything" button
   document.getElementById("giveMeAnythingBtn").addEventListener("click", function() {
-    const randomWorkout = getRandomWorkout();
+    const randomWorkout = getAnyWorkout();
   
     // Update the workout display with the random workout details
     document.querySelector("#workoutDisplay").innerHTML = `
